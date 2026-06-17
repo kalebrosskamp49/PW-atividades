@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="color-scheme" content="dark">
+  <title>Carne & Osso</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet">
+</head>
+<style>
+  body {
+    font-family: Lato, sans-serif;
+    color: #f0e6d3;
+    margin: 0;
+    background-color: #0f0c0a;
+  }
+  .nv {
+    padding: 18px 60px;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid #2a2018;
+    justify-content: space-between;
+  }
+  .nv nav {
+    align-items: center;
+    display: flex;
+  }
+  .logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    color: #e8a838;
+  }
+  .nv a {
+    text-decoration: none;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #c4b49a;
+  }
+  .nv a:hover {
+    color: #e8a838;
+  }
+
+  .hr {
+    border-bottom: 3px solid #e8a838;
+    text-align: center;
+    background-color: #141008;
+    padding: 260px 40px 280px;
+  }
+  .t1 {
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 14px 0 20px;
+    color: #f5e6cc;
+    font-size: 100px;
+  }
+  .t1 span {
+    color: #e8a838;
+  }
+  .p1 {
+    font-size: 26px;
+    color: #a8998a;
+  }
+
+  .bt1 {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #e8a838;
+    display: inline-block;
+    color: #0f0c0a;
+    padding: 24px 50px;
+    margin-top: 35px;
+  }
+  .av {
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 14px;
+    background-color: #e8a838;
+    color: #0f0c0a;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 26px;
+  }
+  .sb {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    padding: 80px 60px 90px;
+  }
+  .t2 {
+    color: #f5e6cc;
+    font-size: 80px;
+    line-height: 1;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  .t2 span {
+    color: #e8a838;
+  }
+  .p2 {
+    color: #a8998a;
+    font-size: 28px;
+    margin-top: 0;
+  }
+  .sb img {
+    width: 100%;
+    display: block;
+  }
+
+  .lp {
+    background-color: #110e09;
+    padding: 120px 60px 150px;
+    text-align: center;
+    border-top: 3px solid #e8a838;
+  }
+  .t3 {
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: #f5e6cc;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 0;
+  }
+
+  .gr {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 17px;
+    margin-top: 17px;
+  }
+
+  .pd {
+    background-color: #1a1410;
+    padding: 28px 30px 32px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+  }
+  .np {
+    color: #f5e6cc;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    margin: 0;
+  }
+  .dp {
+    font-size: 20px;
+    color: #7a6e64;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .pr {
+    font-size: 30px;
+    color: #e8a838;
+    margin-top: auto;
+  }
+
+  .vt {
+    display: flex;
+    text-align: center;
+    background-color: #e8a838;
+    flex-wrap: wrap;
+  }
+  .vt > div {
+    flex-direction: column;
+    display: flex;
+    min-width: 200px;
+    padding: 46px 30px;
+    color: #0f0c0a;
+    flex: 1;
+    gap: 6px;
+    border-right: 3px solid #c4964a;
+    }
+  .vt h2 {
+    font-size: 28px;
+    margin: 0;
+  }
+  .vt p {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .av2 {
+    text-align: center;
+    padding: 130px 200px 140px;
+  }
+  .av2c {
+    padding: 25px;
+    background-color: #1a1410;
+    text-align: left;
+    width: 270px;
+  }
+  .ta {
+    font-style: italic;
+    color: #a8998a;
+    font-size: 26px;
+    line-height: 1.6;
+    margin: 0 0 16px;
+  }
+  .tfoot {
+    font-size: 46px;
+    color: #e8a838;
+    line-height: 1.8;
+  }
+  .nc {
+    font-size: 22px;
+    color: #e8a838;
+  }
+  .fn {
+    background-color: #141008;
+    border-top: 3px solid #e8a838;
+    text-align: center;
+    padding: 200px 40px 220px;
+  }
+  .t4 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #f5e6cc;
+    font-size: 100px;
+    margin: 0 0 10px;
+  }
+  .t4 span {
+    color: #e8a838;
+  }
+  .bt2 {
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding: 16px 40px;
+    background-color: #e8a838;
+    display: inline-block;
+    color: #0f0c0a;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    border-top: 1px solid #2a2018;
+    background-color: #080604;
+    padding: 28px 60px;
+    align-items: center;
+  }
+  .rd {
+    display: flex;
+    gap: 10px;
+  }
+  .rd a {
+    text-transform: uppercase;
+    border: 1px solid #e8a838;
+    text-decoration: none;
+    color: #e8a838;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  .rd a:hover {
+    background-color: #e8a838;
+    color: #0f0c0a;
+  }
+</style>
+<body>
+  <header class="nv">
+    <div class="logo">Carne & Osso</div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hr">
+      <h1 class="t1">CARNE <span>DE VERDADE</span></h1>
+      <p class="p1">Smash burgers feitos na hora, com blend exclusivo de acém e peito bovino.</p>
+      <a href="#cardapio" class="bt1">Ver Cardápio</a>
+    </section>
+    <div class="av">ABERTO TERÇA A DOMINGO - 18H ATÉ A ÚLTIMA COMANDA</div>
+    <section class="sb" id="sobre">
+      <div>
+        <h2 class="t2">A ORIGEM DA <span>CARNE</span></h2>
+        <p class="p2">Nascemos em 2018 em uma cozinha pequena com uma missão grande, que era provar que hambúrguer de verdade não precisa de firulas, só precisa de matéria-prima honesta e muito fogo. <br><br>Nosso blend é desenvolvido junto a um açougue parceiro, selecionado para garantir gordura certa, maciez ideal e aquele sabor que só a carne fresca tem.</p>
+      </div>
+      <div>
+        <img src="https://week.pa/wp-content/uploads/2025/02/LA-VESPA.-BBU_2101-PAGINA-WEB-1000-X-880.jpg" alt="Burger">
+      </div>
+    </section>
+    <section class="lp" id="cardapio">
+      <h2 class="t3">CARDÁPIO</h2>
+      <div class="gr">
+        <div class="pd">
+          <h3 class="np">O Clássico 🍔</h3>
+          <p class="dp">Smash duplo, queijo americano, cebola caramelizada, mostarda defumada e picles da casa.</p>
+          <b class="pr">R$ 34,90</b>
+        </div>
+        <div class="pd">
+          <h3 class="np">Quatro Queijos 🧀</h3>
+          <p class="dp">Smash duplo com cheddar, brie, gorgonzola e parmesão. Pra quem leva queijo a sério.</p>
+          <b class="pr">R$ 42,90</b>
+        </div>
+        <div class="pd">
+          <h3 class="np">Inferno 🌶️</h3>
+          <p class="dp">Smash duplo, cheddar, jalapeño, maionese de sriracha e cebola crispy. Só pros fortes.</p>
+          <b class="pr">R$ 39,90</b>
+        </div>
+      </div>
+      <div class="gr">
+        <div class="pd">
+          <h3 class="np">Bacon Boss 🥓</h3>
+          <p class="dp">Smash triplo, bacon defumado, cheddar derretido e molho BBQ artesanal. Sem moderação.</p>
+          <b class="pr">R$ 47,90</b>
+        </div>
+        <div class="pd">
+          <h3 class="np">O Verde 🥬</h3>
+          <p class="dp">Blend vegetal grelhado, queijo de búfala, tomate seco e pesto de manjericão.</p>
+          <b class="pr">R$ 36,90</b>
+        </div>
+        <div class="pd">
+          <h3 class="np">🍔 Combo da Casa 🍟</h3>
+          <p class="dp">Qualquer burger + fritas rústicas com alecrim + refrigerante 350ml. O pacote completo.</p>
+          <b class="pr">R$ 54,90</b>
+        </div>
+      </div>
+    </section>
+    <section class="vt">
+      <div>
+        <h2>🥩 Carne Fresca 🥩</h2>
+        <p>Blend moído diariamente e nunca congelado.</p>
+      </div>
+      <div>
+        <h2>🍞 Pão Artesanal 🍞</h2>
+        <p>Brioche produzido por padaria parceira, renovado toda semana.</p>
+      </div>
+      <div>
+        <h2>🧑‍🍳 Chapa de Ferro 🧑‍🍳</h2>
+        <p>Smash feito na hora, crocante por fora e suculento por dentro.</p>
+      </div>
+      <div>
+        <h2>🤝 Local de Verdade 🤝</h2>
+        <p>Ingredientes de fornecedores da região, sem rodeios.</p>
+      </div>
+    </section>
+    <section class="av2" id="avaliacoes">
+      <h2 class="t3">AVALIAÇÕES</h2>
+      <div class="gr">
+        <div class="av2c">
+          <p class="ta">"Melhor smash que já comi na região, o Bacon Boss é absurdo. Já voltei quatro vezes esse mês."</p>
+          <p class="nc">RAFAEL M.</p>
+        </div>
+        <div class="av2c">
+          <p class="ta">"Lugar simples, sem frescura, mas a comida é de outro nível. O pão sozinho já vale a visita."</p>
+          <p class="nc">CAMILA T.</p>
+        </div>
+        <div class="av2c">
+          <p class="ta">"Provei o Inferno na maior dúvida e me arrependi de não ter pedido dois. Picante do jeito certo."</p>
+          <p class="nc">BRUNO S.</p>
+        </div>
+      </div>
+    </section>
+    <section class="fn" id="contato">
+      <h2 class="t4">BORA <span>COMER?</span></h2>
+      <p class="p1">Terça a domingo, a partir das 18h.</p>
+
+      <a class="bt2">Reservar pelo WhatsApp</a>
+    </section>
+  </main>
+  <footer>
+    <div class="logo">Carne & Osso</div>
+    <div class="rd">
+      <a>Instagram</a>
+      <a>iFood</a>
+      <a>WhatsApp</a>
+    </div>
+  </footer>
+</body>
+</html>  
